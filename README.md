@@ -8,7 +8,7 @@ Jupiter
 
 Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
 
-* [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
 * [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
 * [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
 * [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/)
