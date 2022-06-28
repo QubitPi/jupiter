@@ -7,3 +7,4 @@ Jupiter is a collection of **Docker images** of commonly used data systems. Hit 
 * [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
 * [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
 * [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/)
+* [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
