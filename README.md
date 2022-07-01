@@ -16,6 +16,7 @@ Jupiter is a collection of **Docker images** of commonly used data systems. Hit 
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=zookeeper)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [ZooKeeper](https://github.com/QubitPi/jupiter/tree/zookeeper/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/)
 
 License
 -------
