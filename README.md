@@ -1,26 +1,57 @@
-[ ![Project Management](https://img.shields.io/badge/Project%20Management-0052CC?style=for-the-badge&logo=trello&logoColor=white) ](https://trello.com/b/SU271V7M)
-[ ![Docker](https://img.shields.io/badge/Docker%20Hub-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/)
-[![License Badge](https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white) ](https://www.apache.org/licenses/LICENSE-2.0)
+[ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/jenkins)
+[ ![License Badge](https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white) ](https://www.apache.org/licenses/LICENSE-2.0)
+[ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Jenkins%20CI/jenkins?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/jenkins?logo=github&style=for-the-badge)
 
-<img src="https://user-images.githubusercontent.com/16126939/176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png" width="128">
+Jenkins Docker Image
+====================
 
-Jupiter
-=======
+![Jenkins Logo](https://user-images.githubusercontent.com/16126939/177018846-540d7d55-b7a7-48e3-976a-f7a438c04297.png)
 
-Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
+Get Image
+---------
 
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=hbase)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=druid)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Druid](https://github.com/QubitPi/jupiter/tree/druid/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=chef)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [CHEF CI/CD](https://github.com/QubitPi/jupiter/tree/chef/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=drill)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=zookeeper)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [ZooKeeper](https://github.com/QubitPi/jupiter/tree/zookeeper/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/)
+### Docker Hub
+
+You can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/jenkins/):
+
+    docker pull jack20191124/jenkins
+
+### GitHub
+
+You could also build the image from [my source repository](https://github.com/QubitPi/jupiter/tree/jenkins/):
+
+    git clone https://github.com/QubitPi/jupiter.git
+    cd jupiter
+    git checkout jenkins
+    docker build -t jack20191124/jenkins .
+
+Standup a Container
+-------------------
+
+Once image is on your machine(either by pulling or building), you can have a HDFS in seconds. You can have HDFS in 2 modes:
+
+### Non-Interactive Mode
+
+If you would like to have a Jenkins server that just runs forever, run
+
+    docker run -d --name=jenkins -it -p 8080:8080 jack20191124/jenkins /etc/init.sh -d
+
+* **name=jenkins**: the container is named "jenkins". You can change it to a different name.
+* **-d**: two `-d`s(one after `docker run`; one at the end) keep container running in background after start
+
+### Interactive Mode
+
+If you would like to spin up a Jenkins and interact with it using shell, run
+
+    docker run --name=jenkins -it -p 8080:8080 jack20191124/jenkins /etc/init.sh -bash
+
+Use the Container
+-----------------
+
+Hit http://localhost:8080 from browser on host machine and follow the instructions to complete the installation.
 
 License
 -------
 
-The use and distribution terms for this software are covered by the Apache License, Version 2.0
-( http://www.apache.org/licenses/LICENSE-2.0.html ).
+The use and distribution terms for this software are covered by the Apache License, Version 2.0 ( http://www.apache.org/licenses/LICENSE-2.0.html ).
