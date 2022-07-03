@@ -9,7 +9,7 @@ Jupiter
 
 Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
 
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=hbase)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=druid)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [Druid](https://github.com/QubitPi/jupiter/tree/druid/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml/badge.svg?branch=chef)](https://github.com/QubitPi/jupiter/actions/workflows/ci.yml) [CHEF CI/CD](https://github.com/QubitPi/jupiter/tree/chef/)
