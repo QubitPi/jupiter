@@ -9,16 +9,16 @@ Jupiter
 
 Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
 
-* [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml)
-* [HBase](https://github.com/QubitPi/jupiter/tree/hbase/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml/badge.svg?branch=hbase)](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml)
-* [Druid](https://github.com/QubitPi/jupiter/tree/druid/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml/badge.svg?branch=druid)](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml)
-* [CHEF CI/CD](https://github.com/QubitPi/jupiter/tree/chef/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml/badge.svg?branch=chef)](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml)
-* [Jenkins](https://github.com/QubitPi/jupiter/tree/jenkins/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml/badge.svg?branch=jenkins)](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml)
-* [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml/badge.svg?branch=drill)](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml)
-* [ZooKeeper](https://github.com/QubitPi/jupiter/tree/zookeeper/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml/badge.svg?branch=zookeeper)](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml)
-* [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml)
-* [Redis](https://github.com/QubitPi/jupiter/tree/redis/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml)
-* [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/) [![ci](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml/badge.svg?branch=hbase)](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml) [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml/badge.svg?branch=druid)](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml) [Druid](https://github.com/QubitPi/jupiter/tree/druid/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml/badge.svg?branch=chef)](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml) [CHEF CI/CD](https://github.com/QubitPi/jupiter/tree/chef/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml/badge.svg?branch=jenkins)](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml) [Jenkins](https://github.com/QubitPi/jupiter/tree/jenkins/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml/badge.svg?branch=drill)](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml) [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml/badge.svg?branch=zookeeper)](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml) [ZooKeeper](https://github.com/QubitPi/jupiter/tree/zookeeper/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml) [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml) [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml) [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/)
 
 License
 -------
