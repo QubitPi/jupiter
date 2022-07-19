@@ -1,25 +1,56 @@
-[ ![Project Management](https://img.shields.io/badge/Project%20Management-0052CC?style=for-the-badge&logo=trello&logoColor=white) ](https://trello.com/b/SU271V7M)
-[ ![Docker](https://img.shields.io/badge/Docker%20Hub-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/)
-[![License Badge](https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white) ](https://www.apache.org/licenses/LICENSE-2.0)
+[ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/faban)
+[ ![License Badge](https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white) ](https://www.apache.org/licenses/LICENSE-2.0)
+[ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Faban%20CI/faban?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/faban-ci.yml)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/faban?logo=github&style=for-the-badge)
 
-<img src="https://user-images.githubusercontent.com/16126939/176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png" width="128">
+Faban Docker Image
+==================
 
-Jupiter
-=======
+<img src="./faban-logo.png" width="256">
 
-Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
+[Faban](http://faban.org/) is a free and open source performance workload creation and execution framework.
 
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml/badge.svg?branch=hadoop)](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml) [Hadoop](https://github.com/QubitPi/jupiter/tree/hadoop/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml/badge.svg?branch=hbase)](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml) [HBase](https://github.com/QubitPi/jupiter/tree/hbase/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml/badge.svg?branch=druid)](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml) [Druid](https://github.com/QubitPi/jupiter/tree/druid/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml/badge.svg?branch=drill)](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml) [Apache Drill](https://github.com/QubitPi/jupiter/tree/drill/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml/badge.svg?branch=chef)](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml) [CHEF CI/CD](https://github.com/QubitPi/jupiter/tree/chef/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml/badge.svg?branch=jenkins)](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml) [Jenkins](https://github.com/QubitPi/jupiter/tree/jenkins/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/nginx-ci.yml/badge.svg?branch=nginx)](https://github.com/QubitPi/jupiter/actions/workflows/nginx-ci.yml) [Nginx](https://github.com/QubitPi/jupiter/tree/nginx/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml/badge.svg?branch=zookeeper)](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml) [ZooKeeper](https://github.com/QubitPi/jupiter/tree/zookeeper/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml) [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml) [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
-* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml) [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/)
+Faban is used in performance, scalability and load testing of almost any type of server application. If the application 
+accepts requests on a network, Faban can measure it.
+
+Get Image
+---------
+
+### Docker Hub
+
+You can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/faban/):
+
+    docker pull jack20191124/faban
+
+### GitHub
+
+You could also build the image from [my source repository](https://github.com/QubitPi/jupiter/tree/faban/):
+
+    git clone https://github.com/QubitPi/jupiter.git
+    cd jupiter
+    git checkout faban
+    docker build -t jack20191124/faban .
+
+Standup a Container
+-------------------
+
+Once image is on your machine(either by pulling or building), you can have a Faban instance in seconds. You can run in 2 modes:
+
+### Non-Interactive Mode
+
+If you would like to have it run forever:
+
+    docker run -d --name=jack20191124/faban -it -p 9980:9980 jack20191124/faban /etc/init.sh -d
+
+### Interactive Mode
+
+If you would like to spin up a HDFS and interact with it using shell, run
+
+    docker run --name=faban -it -p 9980:9980 jack20191124/faban /etc/init.sh -bash
+
+Point your browser to the host on which you started Faban using port 9980. You should see the following:
+
+![](http://faban.org/images/fabanhome.png)
 
 License
 -------
