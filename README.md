@@ -20,6 +20,7 @@ Jupiter is a collection of **Docker images** of commonly used data systems. Hit 
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml/badge.svg?branch=mongodb)](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml) [MongoDB](https://github.com/QubitPi/jupiter/tree/mongodb/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml/badge.svg?branch=redis)](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml) [Redis](https://github.com/QubitPi/jupiter/tree/redis/)
 * [![ci](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml/badge.svg?branch=apachepig)](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml) [Apache Pig](https://github.com/QubitPi/jupiter/tree/apachepig/)
+* [![ci](https://github.com/QubitPi/jupiter/actions/workflows/faban-ci.yml/badge.svg?branch=faban)](https://github.com/QubitPi/jupiter/actions/workflows/faban-ci.yml) [Faban](https://github.com/QubitPi/jupiter/tree/faban/)
 
 License
 -------
