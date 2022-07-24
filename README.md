@@ -1,14 +1,8 @@
 <div align="center">
 
-<img align="center" alt="jupiter" src="https://socialify.git.ci/QubitPi/jupiter/image?description=1&font=Inter&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F16126939%2F176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png&owner=1&pattern=Circuit%20Board&pulls=1&theme=Light">
+<img align="center" alt="jupiter" src="https://socialify.git.ci/QubitPi/jupiter/image?description=1&descriptionEditable=A%20Collection%20of%20Docker%20Images%20Commonly%20Used%20in%20Data-Intensive%20Applications&font=Inter&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F16126939%2F176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png&owner=1&pattern=Circuit%20Board&pulls=1&theme=Light">
 
 </div>
-
-[//]: # (<p align="center">)
-
-[//]: # (    <img align="center" width="128" alt="Jupter Logo" src="https://user-images.githubusercontent.com/16126939/176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png">)
-
-[//]: # (</p>)
 
 <div align="center">
 
@@ -18,11 +12,6 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/master?logo=github&style=for-the-badge)
 
 </div>
-
-Jupiter
-=======
-
-Jupiter is a collection of **Docker images** of commonly used data systems. Hit one of the links below to see them:
 
 <div align="center">
 
