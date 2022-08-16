@@ -27,6 +27,7 @@ Specifically, the image offers the following features:
 * **Extensible Image**: Designed as a base image for all Hadoop-based systems, such as
   [HBase](https://hub.docker.com/r/jack20191124/hbase/).
 
+
 Get Image
 ---------
 
@@ -34,7 +35,29 @@ Get Image
 
 You can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/hadoop/):
 
-    docker pull jack20191124/hadoop
+    docker pull jack20191124/hadoop:<tag>
+
+where `tag` is a regular [Hadoop version](https://archive.apache.org/dist/hadoop/common/). For example, to pull verison
+3.1.3, pull with
+
+    docker pull jack20191124/hadoop:3.1.3
+
+> **Supported [Hadoop Versions](https://hub.docker.com/r/jack20191124/hadoop/tags)**
+>
+> * [2.2.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.2.0)
+> * [2.3.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.3.0)
+> * [2.4.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.4.0), [2.4.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.4.1)
+> * [2.5.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.5.0), [2.5.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.5.1), [2.5.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.5.2)
+> * [2.6.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.0), [2.6.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.1), [2.6.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.2), [2.6.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.3), [2.6.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.4), [2.6.5](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.6.5)
+> * [2.7.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.0), [2.7.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.1), [2.7.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.2), [2.7.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.3), [2.7.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.4), [2.7.5](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.5), [2.7.6](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.6), [2.7.7](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.7.7)
+> * [2.8.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.0), [2.8.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.1), [2.8.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.2), [2.8.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.3), [2.8.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.4), [2.8.5](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.8.5)
+> * [2.9.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.9.0), [2.9.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.9.1), [2.9.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.9.2)
+> * [2.10.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.10.0), [2.10.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.10.1), [2.10.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=2.10.2)
+> * [3.0.0-alpha1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0-alpha1), [3.0.0-alpha2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0-alpha2), [3.0.0-alpha3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0-alpha3), [3.0.0-alpha4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0-alpha4), [3.0.0-beta1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0-beta1)
+> * [3.0.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.0), [3.0.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.1), [3.0.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.2), [3.0.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.0.3)
+> * [3.1.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.1.0), [3.1.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.1.1), [3.1.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.1.2), [3.1.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.1.3), [3.1.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.1.4)
+> * [3.2.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.2.0), [3.2.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.2.1), [3.2.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.2.2), [3.2.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.2.3), [3.2.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.2.4)
+> * [3.3.0](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.3.0), [3.3.1](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.3.1), [3.3.2](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.3.2), [3.3.3](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.3.3), [3.3.4](https://hub.docker.com/r/jack20191124/hadoop/tags?page=1&name=3.3.4)
 
 ### GitHub
 
@@ -44,6 +67,19 @@ You could also build the image from [my source repository](https://github.com/Qu
     cd jupiter
     git checkout hadoop
     docker build -t jack20191124/hadoop .
+
+> To build with a custom Hadoop version, use
+> 
+> ```bash
+> docker build -t jack20191124/hadoop --build-arg HADOOP_VERSION=x.y.z .
+> ```
+> 
+> For example, to build a 3.3.0 Hadoop image, execute
+> 
+> ```bash
+> docker build -t jack20191124/hadoop --build-arg HADOOP_VERSION=3.3.0 .
+> ```
+
 
 Standup a Container
 -------------------
@@ -144,6 +180,7 @@ might be supported in future release.
 8020:8020` maps `localhost:8020` to `container:8020`. You can always use the same `localhost:8020` in integration tests. 
 This is a consistency advantage that this images gives to you.
 
+
 HttpFS
 ------
 
@@ -162,6 +199,7 @@ programming language. Here is how we do it via `curl`:
     curl "http://localhost:14000/webhdfs/v1/user/root/input/core-site.xml?op=open&user.name=root"
 
 Note that you access the files from your host machine because that's where you integration tests are ;)
+
 
 License
 -------
