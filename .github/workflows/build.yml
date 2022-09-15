@@ -1,9 +1,8 @@
-name: "Build & Release"
+name: "Build"
 
 on:
-  push:
-    branches:
-      - "druid"
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   docker:
@@ -29,17 +28,10 @@ jobs:
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       -
-        name: Login to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-      -
-        name: Build and push
+        name: Build
         uses: docker/build-push-action@v3
         with:
           context: .
           build-args: |
             DRUID_VERSION=${{ matrix.druid-version }}
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/druid:${{ matrix.druid-version }}
+          push: false
