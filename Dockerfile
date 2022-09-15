@@ -15,7 +15,7 @@
 FROM jack20191124/hadoop
 
 LABEL maintainer="Jiaqi (Jack) Liu"
-LABEL maintainer-email="jiaqixy@protonmail.com"
+LABEL maintainer-email="jack20191124@proton.me"
 
 ARG DRUID_VERSION=0.15.0
 ARG ZK_VERSION=3.4.11
@@ -34,10 +34,10 @@ RUN apt-get install perl -y
 RUN apt-get install curl -y
 
 # Install Druid
-RUN wget https://archive.apache.org/dist/incubator/druid/$DRUID_VERSION-incubating/apache-druid-$DRUID_VERSION-incubating-bin.tar.gz
-RUN tar -xzvf apache-druid-$DRUID_VERSION-incubating-bin.tar.gz
-RUN rm apache-druid-$DRUID_VERSION-incubating-bin.tar.gz
-RUN mv apache-druid-$DRUID_VERSION-incubating druid
+RUN wget https://archive.apache.org/dist/druid/$DRUID_VERSION/apache-druid-$DRUID_VERSION-bin.tar.gz
+RUN tar -xzvf apache-druid-$DRUID_VERSION-bin.tar.gz
+RUN rm apache-druid-$DRUID_VERSION-bin.tar.gz
+RUN mv apache-druid-$DRUID_VERSION druid
 
 # Install ZooKeeper
 # Druid has a dependency on Apache ZooKeeper for distributed coordination.
