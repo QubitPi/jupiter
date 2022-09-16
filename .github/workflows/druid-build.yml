@@ -35,3 +35,6 @@ jobs:
           build-args: |
             DRUID_VERSION=${{ matrix.druid-version }}
           push: false
+      -
+        name: Test
+        run: mvn clean verify
