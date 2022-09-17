@@ -1,4 +1,4 @@
-name: "Build & Release"
+name: "Druid Build & Release"
 
 on:
   push:
