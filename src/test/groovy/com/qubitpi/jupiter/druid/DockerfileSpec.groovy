@@ -18,6 +18,8 @@ package com.qubitpi.jupiter.druid
 import org.testcontainers.containers.GenericContainer
 import org.testcontainers.containers.output.Slf4jLogConsumer
 import org.testcontainers.containers.wait.strategy.HttpWaitStrategy
+import org.testcontainers.containers.wait.strategy.WaitAllStrategy
+import org.testcontainers.containers.wait.strategy.WaitStrategy
 
 import spock.lang.Specification
 
@@ -29,12 +31,24 @@ class DockerfileSpec extends Specification {
         setup:
         GenericContainer container = new GenericContainer("jack20191124/druid")
                 .withExposedPorts(8090, 8081, 8888)
-                .waitingFor(new HttpWaitStrategy().forPort(8090).withStartupTimeout(Duration.ofMinutes(1)))
-                .waitingFor(new HttpWaitStrategy().forPort(8081).withStartupTimeout(Duration.ofMinutes(1)))
-                .waitingFor(new HttpWaitStrategy().forPort(8888).withStartupTimeout(Duration.ofMinutes(1)))
-
-
-
+                .waitingFor(
+                        new WaitAllStrategy()
+                                .withStrategy(
+                                        new HttpWaitStrategy()
+                                                .forPort(8090)
+                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                )
+                                .withStrategy(
+                                        new HttpWaitStrategy()
+                                                .forPort(8081)
+                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                )
+                                .withStrategy(
+                                        new HttpWaitStrategy()
+                                                .forPort(8888)
+                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                )
+                ) // https://stackoverflow.com/a/58221327/14312712
 
         container.start()
 
