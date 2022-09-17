@@ -49,7 +49,17 @@ RUN mv zookeeper-$ZK_VERSION zk
 RUN mv zk $DRUID_HOME
 
 # Add init file for container
-ADD druid-init.sh /etc/druid-init.sh
-RUN chown root:root /etc/druid-init.sh
-RUN chmod 700 /etc/druid-init.sh
-ENV INIT /etc/druid-init.sh
+#ADD druid-init.sh /etc/druid-init.sh
+#RUN chown root:root /etc/druid-init.sh
+#RUN chmod 700 /etc/druid-init.sh
+#ENV INIT /etc/druid-init.sh
+
+# testcontainers need this; otherwise it gives "/bin/sh: 1: nc: not found" error
+# see https://github.com/testcontainers/testcontainers-node/issues/40
+# see https://stackoverflow.com/a/71643823/14312712
+RUN apt-get install netcat -y
+
+COPY entrypoint.sh /
+RUN chown root:root /entrypoint.sh
+RUN chmod 700 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh", "-bash"]

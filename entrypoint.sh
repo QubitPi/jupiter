@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # run parent(Hadoop) init
-sh /etc/init.sh
+sh /etc/init.sh -bash
 
 # start Druid - this will bring up instances of Zookeeper and the Druid services, all running on the local machine
 # All persistent state such as the cluster metadata store and segments for the services will be kept in the var directory under the apache-druid-0.15.0-incubating package root. Logs for the services are located at var/sv.

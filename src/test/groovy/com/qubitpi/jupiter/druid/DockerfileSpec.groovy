@@ -16,8 +16,12 @@
 package com.qubitpi.jupiter.druid
 
 import org.testcontainers.containers.GenericContainer
+import org.testcontainers.containers.output.Slf4jLogConsumer
+import org.testcontainers.containers.wait.strategy.HttpWaitStrategy
 
 import spock.lang.Specification
+
+import java.time.Duration
 
 class DockerfileSpec extends Specification {
 
@@ -25,9 +29,12 @@ class DockerfileSpec extends Specification {
         setup:
         GenericContainer container = new GenericContainer("jack20191124/druid")
                 .withExposedPorts(8090, 8081, 8888)
-                .withCommand("sh /etc/init.sh")
-                .withCommand("cd \$DRUID_HOME && bin/start-micro-quickstart &")
-                .withCommand("while true; do sleep 1000 ; done")
+                .waitingFor(new HttpWaitStrategy().forPort(8090).withStartupTimeout(Duration.ofMinutes(1)))
+                .waitingFor(new HttpWaitStrategy().forPort(8081).withStartupTimeout(Duration.ofMinutes(1)))
+                .waitingFor(new HttpWaitStrategy().forPort(8888).withStartupTimeout(Duration.ofMinutes(1)))
+
+
+
 
         container.start()
 
