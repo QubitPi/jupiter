@@ -34,19 +34,13 @@ class DockerfileSpec extends Specification {
                 .waitingFor(
                         new WaitAllStrategy()
                                 .withStrategy(
-                                        new HttpWaitStrategy()
-                                                .forPort(8090)
-                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                        new HttpWaitStrategy().forPort(8090).withStartupTimeout(Duration.ofMinutes(1))
                                 )
                                 .withStrategy(
-                                        new HttpWaitStrategy()
-                                                .forPort(8081)
-                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                        new HttpWaitStrategy().forPort(8081).withStartupTimeout(Duration.ofMinutes(1))
                                 )
                                 .withStrategy(
-                                        new HttpWaitStrategy()
-                                                .forPort(8888)
-                                                .withStartupTimeout(Duration.ofMinutes(1))
+                                        new HttpWaitStrategy().forPort(8888).withStartupTimeout(Duration.ofMinutes(1))
                                 )
                 ) // https://stackoverflow.com/a/58221327/14312712
 
