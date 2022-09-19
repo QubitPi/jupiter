@@ -11,13 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 FROM ubuntu:latest
 
 LABEL maintainer="Jiaqi (Jack) Liu"
-LABEL maintainer-email="jiaqixy@protonmail.com"
+LABEL maintainer-email="jack20191124@proton.me"
 
-ARG HADOOP_VERSION=2.8.4
+ARG HADOOP_VERSION=3.3.4
 
 # Ubuntu updates
 RUN apt-get update
@@ -84,7 +83,11 @@ RUN sed -i '/^#.* StrictHostKeyChecking /s/^#//' /etc/ssh/ssh_config
 RUN echo "    UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config
 
 # Add script for starting HDFS
-ADD init.sh /etc/init.sh
-RUN chown root:root /etc/init.sh
-RUN chmod 700 /etc/init.sh
-ENV INIT /etc/init.sh
+#ADD init.sh /etc/init.sh
+#RUN chown root:root /etc/init.sh
+#RUN chmod 700 /etc/init.sh
+#ENV INIT /etc/init.sh
+
+COPY hadoop-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["hadoop-entrypoint.sh"]
+CMD ["-d"]
