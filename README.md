@@ -1,40 +1,83 @@
-<div align="center">
-
-<img align="center" alt="jupiter" src="https://socialify.git.ci/QubitPi/jupiter/image?description=1&descriptionEditable=A%20Collection%20of%20Docker%20Images%20Commonly%20Used%20in%20Data-Intensive%20Applications&font=Inter&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F16126939%2F176177523-6f9dcc4e-1691-4326-adfe-eb372480aace.png&owner=1&pattern=Circuit%20Board&pulls=1&theme=Light">
-
-</div>
-
-<div align="center">
-
-[ ![Docker](https://img.shields.io/badge/Docker%20Hub-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/)
-[ ![Project Management](https://img.shields.io/badge/Project%20Management-0052CC?style=for-the-badge&logo=trello&logoColor=white) ](https://trello.com/b/SU271V7M)
+[ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/chef-recipe-local-test)
 [![License Badge](https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white) ](https://www.apache.org/licenses/LICENSE-2.0)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/master?logo=github&style=for-the-badge)
+[ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Chef%20Recipe%20Local%20Test%20CI/chef-recipe-local-test?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/chef-recipe-local-test-ci.yml)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/chef-recipe-local-test?logo=github&style=for-the-badge)
 
-</div>
+Chef Recipe Testing in Local Mode
+=================================
 
-<div align="center">
+![CHEF Logo](https://user-images.githubusercontent.com/16126939/176977885-e750fd30-12ca-45af-b517-30c486b06992.png)
 
-|                             Docker Image                             |                                                                              Download                                                                              |                                                             Last Updated                                                            |                                                                                                         Image CI Status                                                                                                         |
-|:--------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|     [**Hadoop**](https://github.com/QubitPi/jupiter/tree/hadoop/)    |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/hadoop)  |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/hadoop?logo=github&style=for-the-badge)  |       [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Hadoop%20CI/hadoop?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/hadoop-ci.yml)       |
-|      [**HBase**](https://github.com/QubitPi/jupiter/tree/hbase/)     |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/hbase)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/hbase?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/HBase%20CI/hbase?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/hbase-ci.yml)        |
-|      [**Druid**](https://github.com/QubitPi/jupiter/tree/druid/)     |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/druid)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/druid?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Druid%20CI/druid?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/druid-ci.yml)        |
-|   [**OpenTSDB**](https://github.com/QubitPi/jupiter/tree/opentsdb/)  |  [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/opentsdb) |  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/opentsdb?logo=github&style=for-the-badge) |    [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/OpenTSDB%20CI/opentsdb?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/opentsdb-ci.yml)    |
-|  [**Apache Drill**](https://github.com/QubitPi/jupiter/tree/drill/)  |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/drill)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/drill?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Drill%20CI/drill?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/drill-ci.yml)        |
-|    [**CHEF CI/CD**](https://github.com/QubitPi/jupiter/tree/chef/)   |    [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/chef)   |    ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/chef?logo=github&style=for-the-badge)   |          [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/CHEF%20CI/chef?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/chef-ci.yml)          |
-|    [**Jenkins**](https://github.com/QubitPi/jupiter/tree/jenkins/)   |  [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/jenkins)  |  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/jenkins?logo=github&style=for-the-badge)  |      [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Jenkins%20CI/jenkins?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/jenkins-ci.yml)     |
-|      [**Nginx**](https://github.com/QubitPi/jupiter/tree/nginx/)     |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/nginx)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/nginx?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Nginx%20CI/nginx?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/nginx-ci.yml)        |
-|  [**ZooKeeper**](https://github.com/QubitPi/jupiter/tree/zookeeper/) | [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/zookeeper) | ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/zookeeper?logo=github&style=for-the-badge) |   [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/ZooKeeper%20CI/zookeeper?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/zookeeper-ci.yml)  |
-|    [**MongoDB**](https://github.com/QubitPi/jupiter/tree/mongodb/)   |  [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/mongodb)  |  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/mongodb?logo=github&style=for-the-badge)  |      [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/MongoDB%20CI/mongodb?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/mongodb-ci.yml)     |
-|      [**Redis**](https://github.com/QubitPi/jupiter/tree/redis/)     |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/redis)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/redis?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Redis%20CI/redis?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/redis-ci.yml)        |
-| [**Apache Pig**](https://github.com/QubitPi/jupiter/tree/apachepig/) | [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/apachepig) | ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/apachepig?logo=github&style=for-the-badge) | [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Apache%20Pig%20CI/apachepig?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/apachepig-ci.yml) |
-|      [**Faban**](https://github.com/QubitPi/jupiter/tree/faban/)     |   [ ![Docker](https://img.shields.io/badge/Docker%20Image-309DEE?style=for-the-badge&logo=docker&logoColor=white) ](https://hub.docker.com/r/jack20191124/faban)   |   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/faban?logo=github&style=for-the-badge)   |         [ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/QubitPi/jupiter/Faban%20CI/faban?logo=github&style=for-the-badge) ](https://github.com/QubitPi/jupiter/actions/workflows/faban-ci.yml)        |
 
-</div>
+Get Image
+---------
+
+### Docker Hub
+
+You can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/chef-recipe-local-test/):
+
+    docker pull jack20191124/chef-recipe-local-test
+
+### GitHub
+
+You could also build the image from [my source repository](https://github.com/QubitPi/jupiter/tree/chef-recipe-local-test/):
+
+    git clone https://github.com/QubitPi/jupiter.git
+    cd jupiter
+    git checkout chef-recipe-local-test
+    docker build -t jack20191124/chef-recipe-local-test .
+
+
+Starting a Container using Pseudo-TTY
+-------------------------------------
+
+Pseudo-TTYs are used to run commands inside a container. To start a pseudo-TTY session with the container, we can use
+the `-t` flag. The container will not exit until the session ends. If we want to interact with the container, we can
+couple this with the `-i` flag. This will allow us to run commands in the container using our terminal. Here's an
+example of the command:
+
+```bash
+docker run --name chef-recipe-local-test -it jack20191124/chef-recipe-local-test bash
+```
+
+Executing the command above will spin up the container and takes us directly into the container shell, which we
+[conduct some recipe tests inside](#use-container-to-manually-test-any-chef-recipes).
+
+
+Use Container to Manually Test Any Chef Recipes
+-----------------------------------------------
+
+The [`chef_repo_path`](https://docs.chef.io/ctl_chef_client/#run-in-local-mode) is **~/cookbooks** inside container: 
+
+```bash
+root@df3r670rf23r:/# cd ~
+root@df3r670rf23r:~# ls
+cookbooks
+```
+
+There has already been a cookbook named "test-cookbook":
+
+```bash
+root@df3r670rf23r:~/cookbooks# ls
+test-cookbook
+```
+
+Load the tested recipe (let's name it `test-recipe.rb`) into `test-cookbook/recipes/` directory and test the recipe using
+
+```bash
+cd ~
+chef-client -z -o 'recipe[test-cookbook::test-recipe]'
+```
+
 
 License
 -------
 
-The use and distribution terms for this software are covered by the Apache License, Version 2.0
-( http://www.apache.org/licenses/LICENSE-2.0.html ).
+The use and distribution terms for [Jupiter](https://qubitpi.github.io/jupiter/) are covered by the
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+<div align="center">
+    <a href="https://opensource.org/licenses">
+        <img align="center" width="50%" alt="License Illustration" src="https://github.com/QubitPi/QubitPi/blob/master/img/apache-2.png?raw=true">
+    </a>
+</div>
