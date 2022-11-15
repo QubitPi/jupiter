@@ -1,6 +1,6 @@
 <div align="center">
 
-<img align="center" width="50%" alt="jupiter" src="https://github.com/QubitPi/QubitPi/blob/master/img/jupiter/jupiter-logo.png?raw=true">
+<img align="center" width="80%" alt="jupiter" src="https://github.com/QubitPi/QubitPi/blob/master/img/jupiter/jupiter-logo.png?raw=true">
 
 </div>
 
