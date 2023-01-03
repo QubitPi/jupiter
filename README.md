@@ -1,5 +1,5 @@
 [![Docker](https://img.shields.io/badge/Docker%20Hub-309DEE?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/jack20191124/)
-[![License Badge]](https://www.apache.org/licenses/LICENSE-2.0)
+[!\[License Badge\]]
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/QubitPi/jupiter/master?logo=github&style=for-the-badge)
 
 [License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
