@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 >
 > The development of this project has been pushed down to other of my repos, whoses link can be found at the "__New
-> Maintaining Repo__"
+> Maintaining Repo__" column
 
 <div align="center">
 
