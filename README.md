@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 >
-> The development of this project has been pushed down to other of my forks, whoses link can be found at the "__New
-> Maintaining Repo__" column
+> The development of this project has been pushed down to my forks, whose link can be found at the "__New Maintaining
+> Repo__" column
 
 <div align="center">
 
